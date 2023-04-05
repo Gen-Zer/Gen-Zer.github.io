@@ -13,6 +13,7 @@
   padding: 10px;
   height: 20px;
   background-color: white;
+
 }
 
 .search-bar input[type="text"] {
@@ -37,6 +38,5 @@
 }
 
 .search-bar button[type="submit"]:hover {
-  background-color: #111;
-  color: white;
+  color: #888;
 }

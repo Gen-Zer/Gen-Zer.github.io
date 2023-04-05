@@ -37,6 +37,13 @@ const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 let index = 0;
 
+document.addEventListener("DOMContentLoaded", function() {
+  var slides = document.querySelectorAll(".slide");
+  for (var i = 1; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+});
+
 function showSlide() {
   slides.forEach((slide) => {
     slide.style.display = 'none';

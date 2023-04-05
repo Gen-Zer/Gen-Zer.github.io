@@ -42,7 +42,7 @@ Contains style for slideshow
   font-size: 30px;
   border: none;
   background: transparent;
-  color: black;
+  color: #222;
   outline: none;
   cursor: pointer;
 }
@@ -56,7 +56,7 @@ Contains style for slideshow
   font-size: 30px;
   border: none;
   background: transparent;
-  color: black;
+  color: #222;
   outline: none;
   cursor: pointer;
 }

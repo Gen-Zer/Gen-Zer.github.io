@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Your Website Title</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/topbar.css">
+  <link rel="stylesheet" href="css/slideshow.css">
+  <link rel="stylesheet" href="css/Search bar.css">
+
+  <meta name="description" content="A brief description of your website">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="topbar">
+    <nav>
+
+      <!--Insert logo for the top bar-->
+
+      <img src="logo.png" alt="Logo" class="logo">
+
+
+
+
+      <ul>
+
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+
+      </ul>
+    </nav>
+  </div>
+
+
+
+
+  <h1></h1>
+  <div class="search-bar">
+    <input type="text" placeholder="Search...">
+    <button type="submit">Search</button>
+  </div>
+  <h1></h1>
+
+
+
+  <div class="container">
+    <div class="slideshow">
+      <img class="slide" src="https://via.placeholder.com/800x400.png?text=Slide+1" alt="Slide1">
+      <img class="slide" src="https://via.placeholder.com/800x400.png?text=Slide+2" alt="Slide2">
+      <img class="slide" src="https://via.placeholder.com/800x400.png?text=Slide+3" alt="Slide3">
+      <img class="slide" src="https://via.placeholder.com/800x400.png?text=Slide+4" alt="Slide4">
+    </div>
+    <div class="controls">
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+  </div>
+
+
+
+
+
+  <section class="products">
+    <h2>Our Products</h2>
+    <ul>
+      <li>
+        <h3>Product 1</h3>
+        <p>A brief description of the product</p>
+        <button>Buy Now</button>
+      </li>
+      <li>
+        <h3>Product 2</h3>
+        <p>A brief description of the product</p>
+        <button>Buy Now</button>
+      </li>
+      <li>
+        <h3>Product 3</h3>
+        <p>A brief description of the product</p>
+        <button>Buy Now</button>
+      </li>
+    </ul>
+  </section>
+
+
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+
+      <label for="email">Email:</label>
+
+      <label for="Social Media">Social Media:</label>
+
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 GenZer Inc.</p>
+  </footer>
+</body>
+
+<script>
+  // Your JavaScript code goes here
+
+  // set the slideshow interval to change every 3 seconds
+  const interval = 3000;
+
+  // get all images in the slideshow
+  const images = document.querySelectorAll('.slideshow img');
+
+  // set the index of the currently displayed image
+  let index = 0;
+
+  // show the first image
+  images[index].style.display = 'block';
+
+  // function to change the displayed image
+  function changeImage() {
+    // hide the currently displayed image
+    images[index].style.display = 'none';
+
+    // increment the index
+    index++;
+
+    // if the index is greater than the number of images, reset it to 0
+    if (index >= images.length) {
+      index = 0;
+    }
+
+    // show the next image
+    images[index].style.display = 'block';
+  }
+
+  // set the slideshow interval to change images every 3 seconds
+  setInterval(changeImage, interval);
+</script>
+</body>
+
+</html>
+
+</html>

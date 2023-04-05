@@ -1,0 +1,61 @@
+/*
+Contains style for slideshow
+*/
+.container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 31.25%;
+}
+
+.slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 30px;
+}
+
+.prev {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 30px;
+  border: none;
+  background: transparent;
+  color: black;
+  outline: none;
+  cursor: pointer;
+}
+
+.next {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 30px;
+  border: none;
+  background: transparent;
+  color: black;
+  outline: none;
+  cursor: pointer;
+}

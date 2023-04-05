@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #999;
 }
 
 /* Header styles */
@@ -49,6 +50,7 @@ button {
   cursor: pointer;
 }
 
+
 button:hover {
   background-color: #555;
 }
@@ -77,4 +79,12 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px;
+  box-shadow: 0 -7px 7px rgba(0, 0, 0, 0.3);
+
+}
+
+.contactcolor {
+  background-color: #666;
+  box-shadow: 0 -5px 12px rgba(0, 0, 0, 0.3);
+
 }

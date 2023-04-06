@@ -1,7 +1,16 @@
-.topbar-container * {
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Topbar Styles */
 .topbar-container {
   position: fixed;
   top: 0;
@@ -9,17 +18,12 @@
   right: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; /* center items vertically */
   background-color: black;
   color: white;
   height: 60px;
   padding: 10px;
   z-index: 9999;
-
-}
-
-body {
-  padding-top: 100px; /* height of topbar */
 }
 
 .logo-container {
@@ -29,7 +33,7 @@ body {
 
 .logo-container img {
   height: 75px;
-  width:auto;
+  width: auto;
 }
 
 ul {
@@ -64,6 +68,7 @@ ul li a {
   margin-left: auto;
 }
 
+/* Media Queries */
 @media screen and (max-width: 768px) {
   .topbar-container {
     height: auto;

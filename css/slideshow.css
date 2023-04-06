@@ -1,65 +1,67 @@
-/*
-Contains style for slideshow
-*/
-.container {
+.slider {
   position: relative;
   width: 100%;
-  height: 0;
-  padding-bottom: 31.25%;
-  padding-bottom: 31.25% / 1.6; /* this is the new 3.2:1 aspect ratio value */
-}
-
-.slideshow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
+  height: 400px;
   overflow: hidden;
 }
 
-.slide {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100%;
+.slides {
+  display: flex;
   width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
 }
 
+.slide {
+  flex: 0 0 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .controls {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  width: 50px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.prev,
+.next {
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 100%;
-  height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .prev {
-  position: absolute;
-  left: 30px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  font-size: 30px;
-  border: none;
-  background: transparent;
-  color: #222;
-  outline: none;
-  cursor: pointer;
+  left: 0;
 }
 
 .next {
-  position: absolute;
-  right: 30px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  font-size: 30px;
-  border: none;
-  background: transparent;
-  color: #222;
-  outline: none;
-  cursor: pointer;
+  right: 0;
 }

@@ -1,35 +1,36 @@
-const interval = 3000;
-const slides = document.querySelectorAll('.slide');
-const prev = document.querySelector('.prev');
-const next = document.querySelector('.next');
-let index = 0;
+const slider = document.querySelector('.slider');
+const slides = slider.querySelector('.slides');
+const slide = slides.querySelectorAll('.slide');
 
-function showSlide() {
-  slides.forEach((slide) => {
-    slide.style.display = 'none';
-  });
-  slides[index].style.display = 'block';
-}
+let currentSlide = 0;
+let slideInterval = setInterval(nextSlide, 5000);
 
 function nextSlide() {
-  index++;
-  if (index > slides.length - 1) {
-    index = 0;
-  }
-  showSlide();
+  goToSlide(currentSlide + 1);
 }
 
 function prevSlide() {
-  index--;
-  if (index < 0) {
-    index = slides.length - 1;
-  }
-  showSlide();
+  goToSlide(currentSlide - 1);
 }
 
-prev.addEventListener('click', prevSlide);
-next.addEventListener('click', nextSlide);
+function goToSlide(n) {
+  slide[currentSlide].classList.remove('active');
+  currentSlide = (n + slide.length) % slide.length;
+  slide[currentSlide].classList.add('active');
+  slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
 
-setInterval(nextSlide, interval);
+const prev = slider.querySelector('.prev');
+const next = slider.querySelector('.next');
 
-showSlide();
+prev.addEventListener('click', () => {
+  prevSlide();
+  clearInterval(slideInterval);
+  slideInterval = setInterval(nextSlide, 5000);
+});
+
+next.addEventListener('click', () => {
+  nextSlide();
+  clearInterval(slideInterval);
+  slideInterval = setInterval(nextSlide, 5000);
+});

@@ -1,6 +1,6 @@
 const slider = document.querySelector('.slider');
-const slides = slider.querySelector('.slides');
-const slide = slides.querySelectorAll('.slide');
+const slides = slider.querySelector('.slider-images');
+const slide = slides.querySelectorAll('.slider-image');
 
 let currentSlide = 0;
 let slideInterval = setInterval(nextSlide, 5000);
@@ -20,8 +20,8 @@ function goToSlide(n) {
   slides.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
 
-const prev = slider.querySelector('.prev');
-const next = slider.querySelector('.next');
+const prev = slider.querySelector('.slider-prev');
+const next = slider.querySelector('.slider-next');
 
 prev.addEventListener('click', () => {
   prevSlide();
@@ -34,3 +34,7 @@ next.addEventListener('click', () => {
   clearInterval(slideInterval);
   slideInterval = setInterval(nextSlide, 5000);
 });
+
+setInterval(() => {
+  nextSlide();
+}, 3000);

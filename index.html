@@ -17,28 +17,26 @@
 </head>
 
 <body>
-  <div class="topbar">
-    <nav>
-
-      <!--Insert logo for the top bar-->
-
-      <img src="logo.png" alt="Logo" class="logo">
 
 
-
-
-      <ul>
-
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">PRODUCTS</a></li>
-        <li><a href="#">CONTACT</a></li>
-
-      </ul>
-    </nav>
+  <div class="topbar-container">
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Products</a></li>
+      <li class="contact-link"><a href="#contact">Contact</a></li>
+    </ul>
   </div>
 
 
+
+
+
+
+<div id= "home">
 
 
   <h1></h1>
@@ -51,18 +49,20 @@
 
 
   <div class="slider">
-    <div class="slides">
-      <div class="slide"><img src="https://via.placeholder.com/600x400?text=Slide+1" /></div>
-      <div class="slide"><img src="https://via.placeholder.com/600x400?text=Slide+2" /></div>
-      <div class="slide"><img src="https://via.placeholder.com/600x400?text=Slide+3" /></div>
+    <div class="slider-images">
+      <div class="slider-image" style="background-image: url('Slide 1.jpg')"></div>
+      <div class="slider-image" style="background-image: url('Slide 2.jpg')"></div>
+      <div class="slider-image" style="background-image: url('Slide 3.jpg')"></div>
     </div>
-    <div class="controls">
-      <button class="prev">&lt;</button>
-      <button class="next">&gt;</button>
+    <div class="slider-controls">
+      <button class="slider-prev">&#10094;</button>
+      <button class="slider-next">&#10095;</button>
     </div>
   </div>
 
 
+
+</div>
 
 <script src="slideshow.js"></script>
 
@@ -90,8 +90,10 @@
 </div>
 <h1></h1>
 
+<hr size = "3">
 
 
+<div id="contact">
   <div class="contactcolor">
 
 
@@ -108,7 +110,7 @@
     </section>
 
   </div>
-
+</div>
 
 <footer>
     <p>&copy; 2023 GenZer Inc.</p>

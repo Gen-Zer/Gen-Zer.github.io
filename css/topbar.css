@@ -8,6 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
+  padding-top: 140px;
 }
 
 /* Topbar Styles */
@@ -61,7 +62,7 @@ ul li:last-child {
 ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: none;
 }
 
 .contact {

@@ -17,3 +17,7 @@
   text-align: center;
   box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
 }
+
+.Deal-box:hover {
+  transform: scale(1.05);
+}

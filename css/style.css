@@ -1,9 +1,7 @@
-/* Global styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-
 }
 
 /* Header styles */
@@ -50,18 +48,6 @@ button {
   cursor: pointer;
 }
 
-.products {
-  border-bottom: 1px solid black;
-}
-
-.product {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid black;
-}
-
-
-
 button:hover {
   background-color: #555;
 }
@@ -90,9 +76,8 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px;
-  box-shadow: 0 -7px 7px rgba(0, 0, 0, 0.3);
-
 }
+
 
 .contact{
   color: #fff;

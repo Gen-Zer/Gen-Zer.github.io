@@ -1,36 +1,40 @@
-const slider = document.querySelector('.slider');
-const slides = slider.querySelector('.slider-images');
-const slide = slides.querySelectorAll('.slider-image');
+var slideIndex = 1;
+var slideTimer;
 
-let currentSlide = 0;
-let slideInterval = setInterval(nextSlide, 3000);
+showSlides(slideIndex);
 
-function nextSlide() {
-  goToSlide(currentSlide + 1);
+function plusSlides(n) {
+  clearInterval(slideTimer);
+  showSlides(slideIndex += n);
+  slideTimer = setInterval(function() {
+    plusSlides(1);
+  }, 3000);
 }
 
-function prevSlide() {
-  goToSlide(currentSlide - 1);
+function currentSlide(n) {
+  clearInterval(slideTimer);
+  showSlides(slideIndex = n);
+  slideTimer = setInterval(function() {
+    plusSlides(1);
+  }, 3000);
 }
 
-function goToSlide(n) {
-  clearInterval(slideInterval);
-  slide[currentSlide].classList.remove('active');
-  currentSlide = (n + slide.length) % slide.length;
-  slide[currentSlide].classList.add('active');
-  slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-  slideInterval = setInterval(nextSlide, 3000);
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
 
-const prev = slider.querySelector('.slider-prev');
-const next = slider.querySelector('.slider-next');
-
-prev.addEventListener('click', () => {
-  prevSlide();
-});
-
-next.addEventListener('click', () => {
-  nextSlide();
-});
-
-slideInterval = setInterval(nextSlide, 3000);
+slideTimer = setInterval(function() {
+  plusSlides(1);
+}, 3000);

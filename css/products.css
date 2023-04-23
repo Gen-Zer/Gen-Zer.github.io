@@ -1,19 +1,43 @@
-.products-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.product-box {
-  width: 400px;
-  height: 400px;
-  margin: 35px;
-  background-color: lightgray;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
+/* Dropdown button */
+.dropbtn {
+  background-color: #fff;
+  color: black;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  margin: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 60px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Dropdown links */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* Hover effect */
+.dropdown:hover .dropdown-content {
+  display: block;
 }

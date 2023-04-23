@@ -1,75 +1,62 @@
-/* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
+.topbar-container * {
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  padding-top: 140px;
-}
-
-/* Topbar Styles */
 .topbar-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* center items vertically */
+  align-items: center;
   background-color: black;
   color: white;
   height: 60px;
   padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 9999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  padding-top: 100px;
 }
 
 .logo-container {
-  flex: 0 0 25%;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .logo-container img {
   height: 75px;
   width: auto;
+  display: block;
 }
 
 ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex: 1;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
+
+
 
 ul li {
-  list-style: none;
-  margin: 0 2px;
-}
-
-ul li:first-child {
-  margin-left: 0;
-}
-
-ul li:last-child {
-  margin-right: 200px;
+  margin-left: 10%;
+  font-family: sans-serif;
 }
 
 ul li a {
   color: white;
   text-decoration: none;
-  font-weight: none;
+
 }
 
-.contact {
-  margin-left: auto;
-}
 
-/* Media Queries */
+
 @media screen and (max-width: 768px) {
   .topbar-container {
     height: auto;
@@ -77,23 +64,17 @@ ul li a {
   }
 
   .logo-container {
-    flex-basis: 50%;
     margin-bottom: 10px;
     margin-right: 0;
   }
 
   ul {
-    flex-basis: 50%;
     margin: 0;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   ul li {
-    margin: 0 5px;
-  }
-
-  .contact {
-    margin-left: 0;
-    margin-top: 10px;
+    margin: 5px;
   }
 }

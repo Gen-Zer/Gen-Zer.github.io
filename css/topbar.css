@@ -42,8 +42,6 @@ ul {
   list-style: none;
 }
 
-
-
 ul li {
   margin-left: 10%;
   font-family: sans-serif;
@@ -52,10 +50,7 @@ ul li {
 ul li a {
   color: white;
   text-decoration: none;
-
 }
-
-
 
 @media screen and (max-width: 768px) {
   .topbar-container {

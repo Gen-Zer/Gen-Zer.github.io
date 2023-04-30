@@ -19,6 +19,8 @@
   text-decoration: none;
   color: #000;
   aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .Product-box:hover {
@@ -37,11 +39,10 @@
 .Product-box .Product-content {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   z-index: 1;
   color: #000;
-  padding: 0 10px;
+  padding: 10px;
   font-size: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   text-align: center;
@@ -49,9 +50,31 @@
   box-sizing: border-box;
 }
 
+.Product-box h3,
+.Product-box p {
+  margin: 0;
+}
 
+.Product-box h3 {
 
-.Product-box a {
-  color: #000;
+  margin-bottom: 5px;
+}
+
+.Product-box p {
+  margin-bottom: 10px;
+}
+
+.add-to-cart-btn {
+  margin-top: auto;
+  background-color: #111;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
   text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
 }

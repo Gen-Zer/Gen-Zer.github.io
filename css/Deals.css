@@ -2,10 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .Deal-box {
+  position: relative;
   width: 400px;
   height: 400px;
   margin: 35px;
@@ -16,8 +16,33 @@
   align-items: center;
   text-align: center;
   box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  color: #000;
 }
 
 .Deal-box:hover {
   transform: scale(1.05);
+}
+
+.Deal-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Deal-box .Deal-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  padding: 20px;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.Deal-box a {
+  color: #fff;
+  text-decoration: none;
 }

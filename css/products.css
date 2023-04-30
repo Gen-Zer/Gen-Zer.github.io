@@ -2,22 +2,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .Product-box {
+  width: calc(20% - 20px);
   position: relative;
-  width: 400px;
-  height: 400px;
-  margin: 35px;
+  overflow: hidden;
+  margin-right: 20px;
+  margin-bottom: 20px;
   background-color: lightgray;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
   text-decoration: none;
   color: #000;
+  aspect-ratio: 1 / 1;
 }
 
 .Product-box:hover {

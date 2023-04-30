@@ -1,2 +1,4 @@
 RewriteEngine on
-RewriteRule ^home$ index.html [L]
+RewriteRule ^home$ index.html# [L]
+
+RewriteRule ^products$ products.html# [L]

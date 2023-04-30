@@ -1,0 +1,32 @@
+.Intro-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Intro-box {
+  position: relative;
+  width: 100%;
+  height: 0;
+    padding-bottom: 31.25%;
+  margin: 35px;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  color: #000;
+}
+
+.Intro-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}

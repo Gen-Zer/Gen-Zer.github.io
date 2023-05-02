@@ -52,13 +52,13 @@ button:hover {
   background-color: #555;
 }
 
-form label {
+.contact form label {
   display: block;
   margin-bottom: 10px;
 }
 
-form input,
-form textarea {
+.contact form input,
+.contact form textarea {
   display: block;
   width: 100%;
   padding: 10px;
@@ -67,7 +67,7 @@ form textarea {
   margin-bottom: 20px;
 }
 
-form textarea {
+.contact form textarea {
   height: 150px;
 }
 
@@ -80,6 +80,10 @@ footer {
 
 .contact {
   color: #fff;
+}
+
+.contact h2{
+  padding-bottom: 30px;
 }
 
 .contactcolor {

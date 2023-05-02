@@ -1,71 +1,64 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+.place-order {
+  background-color: #f8f8f8;
+  padding: 60px 0;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
 }
 
-main {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-#product-list, #cart {
-  flex-basis: 45%;
+form {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 40px;
+  background-color: #fff;
 }
 
-#products {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+.form-group {
+  margin-bottom: 20px;
 }
 
-.product {
-  border: 1px solid #ccc;
-  padding: 10px;
-  width: 200px;
-}
-
-.product img {
-  max-width: 100%;
-}
-
-#cart-items {
-  list-style: none;
-  padding: 0;
-}
-
-#cart-items li {
-  display: flex;
-  justify-content: space-between;
+label {
+  display: block;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
-#cart-total {
-  font-weight: bold;
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-#checkout-button {
-  background-color: #4CAF50;
+input[type="number"] {
+  width: 50%;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
   border: none;
   color: #fff;
-  cursor: pointer;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 20px;
-  transition-duration: 0.4s;
+  padding: 10px 20px;
+  font-size: 18px;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-#checkout-button:hover {
-  background-color: #3e8e41;
+button[type="submit"]:hover {
+  background-color: #0062cc;
 }

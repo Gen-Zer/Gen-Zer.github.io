@@ -9,12 +9,14 @@
 }
 
 .Product-box {
+  display: inline-block;
   width: calc(25% - 20px);
   position: relative;
   overflow: hidden;
   margin-right: 20px;
   margin-bottom: 20px;
-  background-color: lightgray;
+  background-size: cover;
+  background-position: center;
   box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
   text-decoration: none;
   color: #000;
@@ -23,23 +25,25 @@
   flex-direction: column;
 }
 
-@media screen and (max-width: 960px) {
+@media only screen and (max-width: 992px) {
   .Product-box {
     width: calc(33.33% - 20px);
   }
 }
 
-@media screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
   .Product-box {
     width: calc(50% - 20px);
   }
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 576px) {
   .Product-box {
     width: calc(100% - 20px);
+    margin-right: 0;
   }
 }
+
 
 .Product-box:hover {
   transform: scale(1.05);

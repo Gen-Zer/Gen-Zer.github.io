@@ -105,3 +105,45 @@
   cursor: pointer;
   width: 100%;
 }
+
+.popup p{
+  align-items: center;
+  justify-content: center;
+padding: 25%;
+color: white;
+
+}
+
+.popup h3{
+  font-size: 50px;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  max-width: 800px; /* 16:9 aspect ratio */
+  aspect-ratio: 16 / 9;
+  background-color: green;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* shadow on left and bottom */
+  z-index: 9999;
+  display: none; /* initially hide the popup */
+}
+
+.popup.show {
+  display: block; /* show the popup when .show class is added */
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  background-color: #000;
+  font-size: 20px;
+  cursor: pointer;
+
+}

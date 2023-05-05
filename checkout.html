@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>Place Order</title>
+      <link rel="shortcut icon" href="img/logo.png" type="image/png">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/checkout.css">
@@ -9,10 +11,13 @@
     <link rel="stylesheet" href="css/topbar.css">
     <link rel="stylesheet" href="css/about us.css">
 
+
     <script src="js/checkout.js"></script>
     <script src="https://kit.fontawesome.com/0968a50b9c.js" crossorigin="anonymous"></script>
 
-    </script>
+
+
+
 
   </head>
   <body>
@@ -37,7 +42,7 @@
       <div class="container">
         <h2 class="section-title">Place Order</h2>
 
-        <form>
+        <form id="order-form">
           <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -68,11 +73,16 @@
             </select>
           </div>
           <div class="form-group">
-            <button type="submit" class="place-order-button">Place Order</button>
+
+            <button type="submit" class="place-order-button" id="place-order-button">Place Order</button>
+
           </div>
         </form>
       </div>
     </section>
+
+<script src="js/order-placed.js"></script>
+
 
     <div id="contact">
       <div class="contactcolor">

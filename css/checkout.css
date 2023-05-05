@@ -15,7 +15,7 @@
   padding: 0 20px;
 }
 
-form {
+.container form {
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 40px;
@@ -26,17 +26,17 @@ form {
   margin-bottom: 20px;
 }
 
-label {
+.container label {
   display: block;
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea,
-select {
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="tel"],
+.container textarea,
+.container select {
   width: 100%;
   padding: 10px;
   font-size: 18px;
@@ -44,11 +44,11 @@ select {
   border: 1px solid #ccc;
 }
 
-input[type="number"] {
+.container input[type="number"] {
   width: 50%;
 }
 
-button[type="submit"] {
+.container button[type="submit"] {
   background-color: #333;
   border: none;
   color: #fff;
@@ -59,6 +59,6 @@ button[type="submit"] {
   transition: all 0.3s ease;
 }
 
-button[type="submit"]:hover {
+.container  button[type="submit"]:hover {
   background-color: #666;
 }

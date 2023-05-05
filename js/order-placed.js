@@ -1,19 +1,25 @@
-const form = document.querySelector('#place-order-form');
-const popup = document.createElement('div');
-popup.classList.add('popup');
-popup.textContent = 'Order placed.';
+function buyNow(shoesId) {
+  // code to place the order
+  // ...
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault(); // prevent form from submitting normally
+  // show the popup
+  var popup = document.createElement("div");
+  popup.classList.add("popup");
 
-  // clear form fields
-  form.reset();
+  var closeButton = document.createElement("button");
+  closeButton.classList.add("close-btn");
+  closeButton.innerHTML = "&times;";
+  closeButton.addEventListener("click", function() {
+    popup.classList.remove("show");
+  });
+  popup.appendChild(closeButton);
 
-  // add popup to page
+  var message = document.createElement("h3");
+  message.innerHTML = "Order placed!";
+  message.style.margin = "0";
+  message.style.textAlign = "center";
+
+  popup.appendChild(message);
   document.body.appendChild(popup);
-
-  // remove popup after 3 seconds
-  setTimeout(() => {
-    document.body.removeChild(popup);
-  }, 3000);
-});
+  popup.classList.add("show");
+}

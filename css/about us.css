@@ -10,10 +10,10 @@
 
 .team-box {
   background-color: #f7f7f7;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 30%;
-  margin: 0 20px;
+  margin: 0 30px;
   flex: 1;
 }
 

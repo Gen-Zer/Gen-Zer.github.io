@@ -14,8 +14,8 @@ function buyNow(shoesId) {
   });
   popup.appendChild(closeButton);
 
-  var message = document.createElement("h3");
-  message.innerHTML = "Order placed!";
+  var message = document.createElement("p");
+  message.innerHTML = "<h3>Order placed! &check;</h3>";
   message.style.margin = "0";
   message.style.textAlign = "center";
 

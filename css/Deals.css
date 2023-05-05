@@ -11,17 +11,29 @@
   margin: 35px;
   background-color: lightgray;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
   text-decoration: none;
   color: #000;
+  transition: all 0.3s ease;
+  opacity: 1;
 }
 
-.Deal-box:hover {
-  transform: scale(1.05);
+.Deal-box .Deal-content {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  padding: 20px;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.Deal-box:hover .Deal-content {
+  opacity: 1;
 }
 
 .Deal-box img {
@@ -33,13 +45,9 @@
   object-fit: cover;
 }
 
-.Deal-box .Deal-content {
-  position: relative;
-  z-index: 1;
-  color: #fff;
-  padding: 20px;
-  font-size: 24px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+.Deal-box:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 
 .Deal-box a {

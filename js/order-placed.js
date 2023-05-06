@@ -22,4 +22,7 @@ function buyNow(shoesId) {
   popup.appendChild(message);
   document.body.appendChild(popup);
   popup.classList.add("show");
+
+  // clear the form fields after showing the popup
+  document.getElementById("order-form").reset();
 }

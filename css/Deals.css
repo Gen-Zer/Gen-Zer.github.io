@@ -21,6 +21,10 @@
   opacity: 1;
 }
 
+.Deal-content h3{
+  font-size: 40px;
+}
+
 .Deal-box .Deal-content {
   position: absolute;
   z-index: 1;
